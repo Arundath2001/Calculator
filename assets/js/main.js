@@ -10,31 +10,31 @@ function calc(){
 
     if(document.getElementById("result").value.includes("+")){
     res = document.getElementById("result").value.split('+');
-    return parseInt(res[0]) + parseInt(res[1]);
+    return parseFloat(res[0]) + parseFloat(res[1]);
     }
     
     else if(document.getElementById("result").value.includes("-")){
     res = document.getElementById("result").value.split('-');
-    return parseInt(res[0]) - parseInt(res[1]);
+    return parseFloat(res[0]) - parseFloat(res[1]);
     }
     
     else if(document.getElementById("result").value.includes("/")){
     res = document.getElementById("result").value.split('/');
-    return parseInt(res[0]) / parseInt(res[1]);
+    return parseFloat(res[0]) / parseFloat(res[1]);
     }
 
     else if(document.getElementById("result").value.includes("%")){
     res = document.getElementById("result").value.split('%');
-    return parseInt(res[0]) / 100;
+    return parseFloat(res[0]) / 100;
     }
     
     else if(document.getElementById("result").value.includes("√")){
     res = document.getElementById("result").value.split('√');
-    return parseInt(Math.sqrt((res[0])));
+    return parseFloat(Math.sqrt((res[0])));
     }
     else{
     res = document.getElementById("result").value.split('*');
-    return result= parseInt(res[0]) * parseInt(res[1]);
+    return result= parseFloat(res[0]) * parseFloat(res[1]);
     }
 }
     
