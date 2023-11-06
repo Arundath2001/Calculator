@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <div class="Calculator">
+        <div class="Calculator__main">
+        <h2>Calculator</h2>
+        <form>
+            <div class="input">
+                <input type="text" id="result" readonly>
+            </div>
+
+            <div class="rowbuttons">
+                <input type="button" value="AC" class="rowbuttons--item1 reset" onclick="cleardisplay()">
+                <input type="button" value="DE" class="rowbuttons--item1 back" onclick="back()">
+                <input type="button" value="%" class="rowbuttons--op percent" onclick="btn('%')">
+                <input type="button" value="/" class="rowbuttons--op" onclick="btn('/')">
+            </div>
+
+            <div class="rowbuttons">
+                <input type="button" value="7" class="rowbuttons--item1 num" onclick="btn('7')">
+                <input type="button" value="8" class="rowbuttons--item1 num" onclick="btn('8')">
+                <input type="button" value="9" class="rowbuttons--item1 num" onclick="btn('9')">
+                <input type="button" value="*" class="rowbuttons--op btn" onclick="btn('*')">
+            </div>
+
+            <div class="rowbuttons">
+                <input type="button" value="4" class="rowbuttons--item1 num" onclick="btn('4')">
+                <input type="button" value="5" class="rowbuttons--item1 num" onclick="btn('5')">
+                <input type="button" value="6" class="rowbuttons--item1 num" onclick="btn('6')">
+                <input type="button" value="-" class="rowbuttons--op btn" onclick="btn('-')">
+            </div>
+
+            <div class="rowbuttons">
+                <input type="button" value="1" class="rowbuttons--item1 num" onclick="btn('1')">
+                <input type="button" value="2" class="rowbuttons--item1 num" onclick="btn('2')">
+                <input type="button" value="3" class="rowbuttons--item1 num" onclick="btn('3')">
+                <input type="button" value="+" class="rowbuttons--op btn" onclick="btn('+')">
+            </div>
+
+            <div class="rowbuttons">
+                <input type="button" value="0" class="rowbuttons--item1 num" onclick="btn('0')">
+                <input type="button" value="." class="rowbuttons--item1 num" onclick="btn('.')">
+                <input type="button" value="√" class="rowbuttons--op "  onclick="root('√')">
+                <input type="button" value="=" class="rowbuttons--op btn" onclick="calculate()">
+            </div>
+
+
+
+        </form>
+    </div>
+    </div>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
+
